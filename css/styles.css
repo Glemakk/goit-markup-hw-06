@@ -828,4 +828,59 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
+
+.modal-caption {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 12px;
+}
+
+.modal-list {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.modal-item {
+  /* position: relative; */
+  width: 448px;
+  height: 40px;
+  margin-bottom: 28px;
+}
+
+.form-label {
+  /* position: absolute; */
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.666;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-font-color);
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-comment-field {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.comment {
+  display: block;
+}
+
 /*==================== END OF BACKDROP ====================*/

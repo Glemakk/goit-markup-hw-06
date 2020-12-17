@@ -417,7 +417,39 @@
                     <use href="./images/sprite.svg#close-btn"></use>
                 </svg>
             </button>
+
+            <b class="modal-caption">Оставьте свои данные, мы вам перезвоним</b>
+            
+            <form>
+                <ul class="modal-list">
+                    <li class="modal-item">
+                        <label for="modal-input-name" class="form-label">Имя</label>
+                        <input type="text" class="modal-form-input" id="modal-input-name">
+                    </li>
+                    <li class="modal-item">
+                        <label for="modal-input-tel" class="form-label">Телефон</label>
+                        <input type="tel" class="modal-form-input" id="modal-input-tel">                        
+                    </li>
+                    <li class="modal-item">
+                        <label for="modal-input-email" class="form-label">Почта</label>
+                        <input type="email" class="modal-form-input" id="modal-input-email">                        
+                    </li>
+                </ul>
+                
+                <p class="modal-comment-field">
+                    <label for="comment">Комментарий</label>
+                    <textarea class="comment" name="comment" id="comment" cols="30" rows="10"></textarea>
+                </p> 
+                
+                <p>
+                    <input type="checkbox">
+                    <label for="">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                </p>
+
+                <button type="submit">Отправить</button>
+            </form>
         </div>
+        
     </div>
 
     <script src="./js/modal.js"></script>
