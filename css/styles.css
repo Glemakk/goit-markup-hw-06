@@ -892,12 +892,14 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  margin-top: 4px;
 }
 
 .modal-form-input:focus,
 .comment:focus {
   border-color: var(--accent-color);
   outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input {
@@ -921,11 +923,53 @@ img {
 }
 
 .check-form-policy {
-  display: block;
+  /* display: block; */
 }
 
 .modal-form-btn {
   width: 200px;
   margin: 0 auto;
+}
+
+.check-form-policy-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+
+  color: var(--secondary-font-color);
+}
+
+.check-form-policy-text::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  /* border: 2px solid var(--primary-font-color);
+  border-radius: 2px; */
+  background-image: url("../images/backdrop/check-icon-off.svg");
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-form-policy:checked + .check-form-policy-text::before {
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 2px;
+  background-image: url("../images/backdrop/check-icon-on.svg");
+
+  /* transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.check-form-policy-text a {
+  color: var(--accent-color);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
 }
 /*==================== END OF BACKDROP ====================*/
