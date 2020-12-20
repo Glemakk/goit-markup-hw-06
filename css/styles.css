@@ -896,7 +896,9 @@ img {
 }
 
 .modal-form-input:focus,
-.comment:focus {
+.modal-form-input:hover,
+.comment:focus,
+.comment:hover {
   border-color: var(--accent-color);
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -949,6 +951,7 @@ img {
   display: inline-block;
   width: 16px;
   height: 15px;
+  margin-right: 8px;
   /* border: 2px solid var(--primary-font-color);
   border-radius: 2px; */
   background-image: url("../images/backdrop/check-icon-off.svg");
@@ -966,6 +969,11 @@ img {
   /* transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
+
+/* .check-form-policy:hover + .check-form-policy-text::before,
+.check-form-policy:focus + .check-form-policy-text::before {
+  border: 2px solid var(--accent-color);
+} */
 
 .check-form-policy-text a {
   color: var(--accent-color);
